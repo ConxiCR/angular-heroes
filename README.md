@@ -78,6 +78,27 @@ ng generate component heroes
         - You used *ngIf to conditionally include or exclude a block of HTML.
         - You can toggle a CSS style class with a class binding.
 
-<img alt="heroes" scr="https://angular.io/generated/images/guide/toh/nav-diagram.png" />
+## 3. Create a feature component      
+### Make the HeroDetailComponent
+~~
+ng generate component hero-detail
+    . Write the template
+    . Add the @Input() hero property
+        https://angular.io/generated/images/guide/inputs-outputs/input.svg
+###  Show the HeroDetailComponent
+    . Update the HeroesComponent template
+    . What changed?
+    . Final code review
+    . Summary
+        - You created a separate, reusable HeroDetailComponent.
+        - You used a property binding to give the parent HeroesComponent control over the child HeroDetailComponent.
+        - You used the @Input decorator to make the hero property available for binding by the external HeroesComponent.
+
+
+
+
+
+
+https://angular.io/generated/images/guide/toh/nav-diagram.png
 
 
