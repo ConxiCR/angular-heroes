@@ -38,11 +38,11 @@ By the end you do the following:
 . Create a shared service to assemble the heroes.
 . Use routing to navigate among different views and their components.
 
-##1. The Hero editor
-###create the heroes component
+## 1. The Hero editor
+### create the heroes component
 ~~
 ng generate component heroes
-###Create a Hero interface (src/app/hero.ts)
+### Create a Hero interface (src/app/hero.ts)
     . Give it id and name properties.
     . Show the hero object
     . Format with UppercasePipe
@@ -60,8 +60,8 @@ ng generate component heroes
        - You learned about the AppModule.
        - You imported the FormsModule in the AppModule so that Angular would recognize and apply the ngModel   directive.
        - You learned the importance of declaring components in the AppModule and appreciated that the CLI declared it for you.
-##2. Display a List       
-###Display a selection list
+## 2. Display a List       
+### Display a selection list
     . Create mock heroes
     . Displaying heroes
     . List heroes with *ngFor
