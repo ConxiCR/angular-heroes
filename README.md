@@ -93,7 +93,52 @@ ng generate component hero-detail
         - You created a separate, reusable HeroDetailComponent.
         - You used a property binding to give the parent HeroesComponent control over the child HeroDetailComponent.
         - You used the @Input decorator to make the hero property available for binding by the external HeroesComponent.
+## 4. Add Services
+    . Why services
+       . Inject in HeroService, which uses the service to send a message.
+       . Inject in MessagesComponent, which displays that message, and also displays the ID when the user clicks a hero.
+### Create the HeroService
+~~
+ng generate service hero
 
+    . @Injectable() services
+    . Get hero data
+    . Provide the HeroService
+    . Update HeroesComponen
+    . Inject the HeroService
+    . Add getHeroes()
+    . Call it in ngOnInit()
+    . See it run
+###  Observable data  
+    . Observable HeroService
+    . Subscribe in HeroesComponent
+    . Show messages
+### Create MessagesComponent
+~~
+ng generate component messages
+### Create the MessageService
+~~
+ng generate service message
+    . Inject it into the HeroService
+    . Send a message from HeroService
+    . Display the message from HeroService
+    . Bind to the MessageService
+    . Add additional messages to hero service
+    . Final code review
+    . Summary
+        - You refactored data access to the HeroService class.
+        - You registered the HeroService as the provider of its service at the root level so that it can be injected anywhere in the app.
+        - You used Angular Dependency Injection to inject it into a component.
+        - You gave the HeroService get data method an asynchronous signature.
+        - You discovered Observable and the RxJS Observable library.
+        - You used RxJS of() to return an observable of mock heroes (Observable<Hero[]>).
+        - The component's ngOnInit lifecycle hook calls the HeroService method, not the constructor.
+        - You created a MessageService for loosely-coupled communication between classes.
+        - The HeroService injected into a component is created with another injected service, MessageService.
+        
+
+
+    
 
 
 
