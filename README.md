@@ -144,6 +144,7 @@ ng generate service message
 ### Add the AppRoutingModule
 ~~
 ng generate module app-routing --flat --module=app
+
     . Routes
     . RouterModule.forRoot()
     . Add RouterOutlet
@@ -153,6 +154,7 @@ ng generate module app-routing --flat --module=app
 ### Add a dashboard view
 ~~
 ng generate component dashboard
+
     . Add the dashboard route
     . Add a default route
     . Add dashboard link to the shell
@@ -177,7 +179,9 @@ ng generate component dashboard
         - You refactored a tightly-coupled master/detail view into a routed detail view.
         - You used router link parameters to navigate to the detail view of a user-selected hero.
         - You shared the HeroService among multiple component s.
-
+## 6. Get data from a server
+    . Enable HTTP services
+    
 
 
 
