@@ -181,7 +181,23 @@ ng generate component dashboard
         - You shared the HeroService among multiple component s.
 ## 6. Get data from a server
     . Enable HTTP services
-    
+    . Simulate a data server
+    Install the In-memory Web API package from npm with the following command:
+
+npm install angular-in-memory-web-api --save
+~~
+ng generate service InMemoryData
+### Heroes and HTTP
+    . Get heroes with HttpClient
+    . HttpClient methods return one value
+    . HttpClient.get() returns response data
+    . Error handling
+    . Tap into the Observable
+### Update heroes
+### Add HeroService.updateHero()
+### Delete a hero
+### Search by name
+
 
 
 
