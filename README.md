@@ -135,7 +135,16 @@ ng generate service message
         - The component's ngOnInit lifecycle hook calls the HeroService method, not the constructor.
         - You created a MessageService for loosely-coupled communication between classes.
         - The HeroService injected into a component is created with another injected service, MessageService.
-        
+## 5. Add Navigation
+     There are new requirements for the Tour of Heroes app:
+        . Add a Dashboard view.
+        . Add the ability to navigate between the Heroes and Dashboard views.
+        . When users click a hero name in either view, navigate to a detail view of the selected hero.
+        . When users click a deep link in an email, open the detail view for a particular hero.
+### Add the AppRoutingModule
+~~
+ng generate module app-routing --flat --module=app
+
 
 
     
