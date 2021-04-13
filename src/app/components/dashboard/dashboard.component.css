@@ -1,6 +1,6 @@
 /* DashboardComponent's private CSS styles */
 
-h2 {
+  h2 {
     text-align: center;
   }
   
@@ -37,7 +37,11 @@ h2 {
     flex: 0 1 auto;
     align-self: auto;
   }
-  
+  a:hover {
+    background-color: #000;
+    color: green;
+  }
+
   @media (min-width: 600px) {
     a {
       width: 18%;
@@ -45,6 +49,4 @@ h2 {
     }
   }
   
-  a:hover {
-    background-color: #000;
-  }
+  

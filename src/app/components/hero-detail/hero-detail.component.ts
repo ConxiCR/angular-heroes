@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
 import { Location } from '@angular/common';
 import { Hero } from 'src/app/hero';
 //Now the HeroDetailComponent is presenting the hero detail list instead of the HeroesComponent
@@ -31,5 +32,7 @@ export class HeroDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
-
+  save(): void {
+    this.heroService.updateHero(this.hero).subscribe(() => this.goBack());
+  }
 }
