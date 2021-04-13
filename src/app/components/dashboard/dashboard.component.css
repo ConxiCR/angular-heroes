@@ -1,52 +1,51 @@
 /* DashboardComponent's private CSS styles */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0
+}
+.heroes-menu {
+  padding: 1rem 0;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+a {
+  background-color: #3f525c;
+  border-radius: 2px;
+  padding: 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  max-height: 120px;
+  min-width: 120px;
+  margin: 0.5rem auto;
+  box-sizing: border-box;
 
-  h2 {
-    text-align: center;
-  }
-  
-  .heroes-menu {
-    padding: 0;
-    margin: auto;
-    max-width: 1000px;
-  
-    /* flexbox */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: flex-start;
-  }
-  
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+a:hover {
+  background-color: #eee;
+  cursor: pointer;
+  color: #607d8b;
+}
+
+@media (min-width: 600px) {
   a {
-    background-color: #3f525c;
-    border-radius: 2px;
-    padding: 1rem;
-    font-size: 1.2rem;
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    min-width: 70px;
-    margin: .5rem auto;
-    box-sizing: border-box;
-  
-    /* flexbox */
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
+    width: 18%;
+    box-sizing: content-box;
   }
-  a:hover {
-    background-color: #000;
-    color: green;
-  }
-
-  @media (min-width: 600px) {
-    a {
-      width: 18%;
-      box-sizing: content-box;
-    }
-  }
-  
-  
+}

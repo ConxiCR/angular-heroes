@@ -1,4 +1,4 @@
-label {
+label, span {
     color: #435960;
     font-weight: bold;
   }
@@ -9,6 +9,7 @@ label {
   button {
     margin-top: 20px;
     background-color: #eee;
+    color: #607d8b;
     padding: 1rem;
     border-radius: 4px;
     font-size: 1rem;
